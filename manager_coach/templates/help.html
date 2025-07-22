@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Coach - Voice Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Vapi Widget Script -->
+    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Manager Coach</h1>
+            <p class="subtitle">Your AI-powered management assistant</p>
+        </header>
+        <main>
+            <section class="info">
+                <h2>Welcome!</h2>
+                <p>Need help with management strategies, team communication, or leadership tips? Our virtual agent is here to support you. Use the chat widget in the corner to get instant coaching and advice!</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Manager Coach</p>
+        </footer>
+    </div>
+    <!-- Place the widget at the end of the body -->
+    <vapi-widget
+        public-key="f58903e7-c523-42f7-9f4d-d0dda4291111"
+        assistant-id="f672aa32-b133-46e7-b793-037cf8e42b2c"
+        mode="voice"
+        theme="light"
+        size="compact"
+        main-label="Talk to Manager Coach"
+        start-button-text="Start Voice Chat"
+        end-button-text="End Call"
+        empty-voice-message="Click to start a voice conversation"
+    ></vapi-widget>
+</body>
+</html> 
